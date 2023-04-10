@@ -3,7 +3,7 @@
 Showcasing two different techniques for changing DLL load order by using undocumented APIs.
 These are not novel techniques but I never saw them documented anywhere.
 
- The proper signatures for RtlCreateProcessParameter and RtlCreateProcessParameters are:
+ The proper signatures for RtlCreateUserProcess and RtlCreateProcessParameters are:
  
  ```cpp
 RtlCreateUserProcess(
