@@ -1,0 +1,3 @@
+[submodule "DllLoadPath/phnt"]
+	path = DllLoadPath/phnt
+	url = https://github.com/winsiderss/phnt.git

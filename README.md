@@ -7,16 +7,16 @@ These are not novel techniques but I never saw them documented anywhere.
  
  ```cpp
 RtlCreateUserProcess(
-  IN PUNICODE_STRING      ImagePath,
-  IN ULONG                ObjectAttributes,
-  IN OUT PRTL_USER_PROCESS_PARAMETERS ProcessParameters,
-  IN PSECURITY_DESCRIPTOR ProcessSecurityDescriptor OPTIONAL,
-  IN PSECURITY_DESCRIPTOR ThreadSecurityDescriptor OPTIONAL,
-  IN HANDLE               ParentProcess,
-  IN BOOLEAN              InheritHandles,
-  IN HANDLE               DebugPort OPTIONAL,
-  IN HANDLE               ExceptionPort OPTIONAL,
-  OUT PRTL_USER_PROCESS_INFORMATION ProcessInformation );
+    PUNICODE_STRING      ImagePath,
+    ULONG                ObjectAttributes,
+    OUT PRTL_USER_PROCESS_PARAMETERS ProcessParameters,
+    PSECURITY_DESCRIPTOR ProcessSecurityDescriptor OPTIONAL,
+    PSECURITY_DESCRIPTOR ThreadSecurityDescriptor OPTIONAL,
+    HANDLE               ParentProcess,
+    BOOLEAN              InheritHandles,
+    HANDLE               DebugPort OPTIONAL,
+    HANDLE               ExceptionPort OPTIONAL,
+    PRTL_USER_PROCESS_INFORMATION ProcessInformation );
   
 RtlCreateProcessParameters(
     PRTL_USER_PROCESS_PARAMETERS *pProcessParameters,
